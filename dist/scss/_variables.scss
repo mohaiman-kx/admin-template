@@ -2,16 +2,24 @@
 $color-dark :#000;
 $color-light: #fff;
 $color-light-blue : #EFF5F8;
-$color-text-dark : #3D3D3D;
+$color-text-dark : #2c3e50;
+$color-text-deep-dark : #525252;
 $color-active-1:#3498db;
-$color-active-2:#1abc9c;
+$color-active-2:#03a9f4;
 $color-active-3:#2ecc71;
+$color-opacity-1:#03a9f433;
 
 
 //font sizes 
+$font-size-sm:0.75rem;
 $font-size-md:1rem;
 $font-size-mg:1.125rem;
 $font-size-lm:1.25rem;
 $font-size-lg:1.5rem;
 $font-size-xl:2rem;
 $font-size-xxl:2.125rem;
+
+
+//box shadow
+$box-shadow-md: 0 3px 6px rgba(149, 157, 165, 0.13);
+$box-shadow-xl: 0 12px 48px rgba(149, 157, 165, 0.3);

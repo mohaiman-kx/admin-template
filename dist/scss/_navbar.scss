@@ -12,11 +12,11 @@
     text-align: center;
 }
 
-#sidebar.active .sidebar-header h3{
+#sidebar.active .sidebar-header h3 {
     display: none;
 }
 
-.sidebar-header img{
+.sidebar-header img {
     width: 60%;
 }
 
@@ -24,7 +24,7 @@
     display: block;
 }
 
-#sidebar.active .sidebar-header  img{
+#sidebar.active .sidebar-header img {
     width: 100%;
 }
 
@@ -69,7 +69,7 @@
     font-size: $font-size-md;
     display: block;
     text-transform: uppercase;
-    color:$color-text-dark;
+    color: $color-text-dark;
     transition: 0.3s ease-in-out;
 }
 
@@ -99,8 +99,3 @@ a[data-toggle="collapse"] {
     right: 20px;
     transform: translateY(-50%);
 }
-
-
-
-
-

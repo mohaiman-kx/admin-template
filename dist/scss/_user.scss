@@ -1,0 +1,26 @@
+.main-dot {
+    cursor: pointer;
+}
+
+.main-dot .dot {
+    width: 4px;
+    height: 4px;
+    background: $color-dark;
+    display: inline-block;
+}
+
+.custom-dropdown {
+    position: absolute;
+    top: 0;
+    right: 28px;
+}
+
+
+.custom-dropdown .dropdown-toggle::after {
+    display: none !important;
+}
+
+
+.dropleft .dropdown-toggle::before {
+    display: none;
+}
