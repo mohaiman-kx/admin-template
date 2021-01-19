@@ -1,2 +1,7 @@
+
+@import 'variables';
 @import 'globals';
-@import 'variables'
+@import 'navbar';
+@import 'content';
+//put @user.scss always last
+@import 'user';
