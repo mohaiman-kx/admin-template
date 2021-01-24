@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="dist/flaticon/flaticon.css">
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
     <!--sass complied css-->
     <link rel="stylesheet" href="dist/css/style.css">
@@ -34,16 +36,57 @@
             <ul class="list-unstyled components">
                 <li class="">
                     <a href="">
-                        <i class="fas fa-home"></i>
-                        Home
+                        <i class="flaticon-house"></i>
+                        <span class="menu-title">Home</span>
                     </a>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="flaticon-product"></i> <span class="menu-title">Products</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href="#">All Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Product Catagory</a>
+                        </li>
+
+
+                    </ul>
                 </li>
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-copy"></i>
-                        Orders
+                        <i class="flaticon-choices"></i>
+                        <span class="menu-title">Orders</span>
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Orders</a>
+                        </li>
+                        <li>
+                            <a href="#">Draft</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="flaticon-order"></i>
+                        <span class="menu-title">inventory</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="flaticon-wallet"></i>
+                        <span class="menu-title">Payment</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu3">
                         <li>
                             <a href="#">Page 1</a>
                         </li>
@@ -55,7 +98,14 @@
                         </li>
                     </ul>
                 </li>
-            </ul>
+                <li>
+                    <a href="">
+                        <i class="flaticon-settings"></i>
+                        <span class="menu-title">Setting</span>
+                    </a>
+                </li>
+      
+
         </nav>
 
         <!-- Page Content  -->
@@ -67,20 +117,16 @@
                     <button type="button" id="sidebarCollapse" class="btn">
                         <i class="fas fa-align-left"></i>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Setting</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Log out</a>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  admin@mail.com
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                              </li>
                         </ul>
                     </div>
                 </div>
@@ -106,22 +152,10 @@
                                 <div class="stats-card-content">
                                     <p class="mb-1">Sales</p>
                                     <p class="today mb-1">Today</p>
-                                    <h4>$525.70</h4>
+                                    <h4>BDT 52570</h4>
                                 </div>
                             </div>
-                            <div class="dropdown custom-dropdown">
-                                <div class="main-dot dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
+
                         </div>
 
                         <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
@@ -135,69 +169,119 @@
                                     <h4>20</h4>
                                 </div>
                             </div>
-                            <div class="dropdown custom-dropdown">
-                                <div class="main-dot dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
+
                         </div>
 
                         <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                             <div class="stats-card">
                                 <div class="stats-card-icon">
-                                    <img src="images/icons/sales.svg" alt="">
+                                    <img src="images/icons/products.svg" alt="">
                                 </div>
                                 <div class="stats-card-content">
-                                    <p class="mb-1">Sales</p>
-                                    <p class="today mb-1">Today</p>
-                                    <h4>$525.70</h4>
+                                    <p class="mb-1">Products</p>
+                                    <p class="today mb-1">Total</p>
+                                    <h4>50</h4>
                                 </div>
                             </div>
-                            <div class="dropdown custom-dropdown">
-                                <div class="main-dot dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
+
                         </div>
 
                         <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                             <div class="stats-card">
                                 <div class="stats-card-icon">
-                                    <img src="images/icons/orders.svg" alt="">
+                                    <img src="images/icons/pay.svg" alt="">
                                 </div>
                                 <div class="stats-card-content">
-                                    <p class="mb-1">Orders</p>
+                                    <p class="mb-1">Payment</p>
                                     <p class="today mb-1">Today</p>
-                                    <h4>20</h4>
+                                    <h4>2000</h4>
                                 </div>
                             </div>
-                            <div class="custom-dropdown dropleft">
-                                <div class="main-dot dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="summery-area">
+                                <ul class="">
+                                    <li><a href=""><span>60</span> Orders are ready to fullfill </a></li>
+                                    <li><a href=""><span>10</span> Payments to capture </a></li>
+                                    <li><a href="">No products out of stock</a></li>
+                                </ul>
+                            </div>
+                            <!-- top-products-area -->
+                            <div class="top-product-area mt-5">
+                                <div class="top-product-title border-bottom-light">
+                                    <h5>Top Products</h5>
                                 </div>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="top-product-details">
+                                    <div class="single-top-product">
+                                        <a href="">
+                                            <div class="single-top-product-image">
+                                                <img src="https://via.placeholder.com/80" alt="">
+                                            </div>
+                                            <div class="single-top-product-details">
+                                                <p class="name">T - Shirt</p>
+                                                <p class="size">M</p>
+                                                <p class="ordered">One Ordered</p>
+                                            </div>
+                                            <div class="single-top-product-price">
+                                                <p>BDT 450.00</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="single-top-product">
+                                        <a href="">
+                                            <div class="single-top-product-image">
+                                                <img src="https://via.placeholder.com/80" alt="">
+                                            </div>
+                                            <div class="single-top-product-details">
+                                                <p class="name">T - Shirt</p>
+                                                <p class="size">M</p>
+                                                <p class="ordered">One Ordered</p>
+                                            </div>
+                                            <div class="single-top-product-price">
+                                                <p>BDT 450.00</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="single-top-product">
+                                        <a href="">
+                                            <div class="single-top-product-image">
+                                                <img src="https://via.placeholder.com/80" alt="">
+                                            </div>
+                                            <div class="single-top-product-details">
+                                                <p class="name">T - Shirt</p>
+                                                <p class="size">M</p>
+                                                <p class="ordered">One Ordered</p>
+                                            </div>
+                                            <div class="single-top-product-price">
+                                                <p>BDT 450.00</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="activity">
+                                <div class="activity-header text-center">
+                                    <h5>Activity</h5>
+                                </div>
+                                <div class="activity-summary">
+                                    <ul>
+                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
+                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
+                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
+                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
+                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
+                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
+                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
+                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
+                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

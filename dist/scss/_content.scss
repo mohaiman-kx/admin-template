@@ -56,3 +56,107 @@
 
 
 }
+
+.summery-area ul{
+    box-shadow: $box-shadow-xl;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.summery-area ul li{
+    list-style: none;
+    padding:20px 20px;
+    border-bottom: 1px solid $color-grey-light;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+
+    &:hover{
+        background:$color-grey-light;
+    }
+
+    &:last-child{
+        border-bottom: none;
+    }
+
+}
+
+.summery-area ul li a{
+    color: $color-text-dark;
+    font-size: $font-size-mg;
+
+    span{
+        font-weight: 900;
+    }
+
+}
+
+.activity{
+    box-shadow: $box-shadow-xl;
+
+    .activity-header.text-center {
+        padding: 20px 0;
+        border-bottom: 1px solid $color-grey-light;
+    }
+    .activity-summary{
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li{
+                list-style: none;
+                padding: 20px 20px;
+                font-size: $font-size-mg;
+                border-bottom: 1px solid $color-grey-light;
+
+                &:last-child{
+                    border-bottom: 0;
+                }
+
+            }
+        }
+
+
+    }
+}
+
+
+.top-product-area{
+    box-shadow: $box-shadow-xl;
+
+    .top-product-title{
+        padding: 20px 20px;
+    }
+    .single-top-product a{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid $color-grey-light;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+
+        .single-top-product-details{
+            flex: 1 0 0;
+            margin-left: 15px;
+
+            .name{
+                color: $color-active-2;
+                font-weight: 600;
+            }
+        }
+
+        .single-top-product-details p , .single-top-product-price p{
+            color: $color-text-dark;
+            font-size: $font-size-md;
+            padding: 5px 0;
+        }
+        &:hover{
+            background: $color-hover-blue;
+        }
+    }
+
+
+}

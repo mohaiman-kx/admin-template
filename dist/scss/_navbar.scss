@@ -41,12 +41,16 @@
 #sidebar.active ul li a i {
     margin-right: 0;
     display: block;
-    font-size: 1.8em;
+    font-size: 30px;
     margin-bottom: 5px;
 }
 
 #sidebar.active ul ul a {
     padding: 10px !important;
+}
+
+#sidebar.active ul li a .menu-title{
+    display: none;
 }
 
 #sidebar.active .dropdown-toggle::after {
@@ -81,21 +85,22 @@
 
 #sidebar ul li a i {
     margin-right: 10px;
+    font-size: 20px;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    background: $color-active-2;
+    background: #E0F7FA;
 }
 
 a[data-toggle="collapse"] {
     position: relative;
 }
 
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
+// .dropdown-toggle::after {
+//     display: block;
+//     position: absolute;
+//     top: 56%;
+//     right: -10px;
+//     transform: translateY(-50%);
+// }
