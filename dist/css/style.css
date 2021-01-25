@@ -43,6 +43,44 @@ p {
   border-bottom: 1px solid #EEEEEE;
 }
 
+.custom-btn-primary {
+  color: #fff;
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.active-now {
+  width: 15px;
+  height: 15px;
+  background: #2ecc71;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.not-active {
+  width: 15px;
+  height: 15px;
+  background: #e74c3c;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.pending {
+  width: 15px;
+  height: 15px;
+  background: #f39c12;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
 #sidebar {
   min-width: 300px;
   max-width: 300px;
@@ -316,6 +354,162 @@ a[data-toggle="collapse"] {
 
 .top-product-area .single-top-product a:hover {
   background: #03a9f417;
+}
+
+.genarel-information {
+  -webkit-box-shadow: 0 12px 48px rgba(149, 157, 165, 0.3);
+          box-shadow: 0 12px 48px rgba(149, 157, 165, 0.3);
+  padding: 20px;
+}
+
+.genarel-information h6 {
+  font-size: 1.5rem;
+}
+
+.genarel-information .genarel-form .form-group {
+  margin-bottom: 2rem;
+}
+
+.genarel-information .genarel-form input {
+  border-radius: 0;
+  padding: 23px;
+}
+
+.genarel-information .genarel-form textarea {
+  border-radius: 0;
+  padding: 23px;
+}
+
+.genarel-information .form-control:focus {
+  color: #03a9f4;
+  border: 1px solid #03a9f4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.genarel-information .form-control:focus::-webkit-input-placeholder {
+  color: #03a9f4;
+}
+
+.genarel-information .form-control:focus:-ms-input-placeholder {
+  color: #03a9f4;
+}
+
+.genarel-information .form-control:focus::-ms-input-placeholder {
+  color: #03a9f4;
+}
+
+.genarel-information .form-control:focus::placeholder {
+  color: #03a9f4;
+}
+
+.organize-product {
+  -webkit-box-shadow: 0 12px 48px rgba(149, 157, 165, 0.3);
+          box-shadow: 0 12px 48px rgba(149, 157, 165, 0.3);
+  padding: 20px;
+}
+
+.organize-product h6 {
+  font-size: 1.5rem;
+}
+
+.organize-product .organize-product-form .form-group {
+  margin-bottom: 2rem;
+}
+
+.organize-product .organize-product-form .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.organize-product .organize-product-form .form-control {
+  border-radius: 0;
+  height: 48px;
+}
+
+.product-table .table {
+  text-align: center;
+}
+
+.product-table input[type=checkbox] {
+  border-radius: 0;
+}
+
+.product-table .table td, .product-table .table th {
+  vertical-align: middle;
+}
+
+.search-engine-area {
+  -webkit-box-shadow: 0 12px 48px rgba(149, 157, 165, 0.3);
+          box-shadow: 0 12px 48px rgba(149, 157, 165, 0.3);
+  padding: 20px;
+}
+
+.search-engine-area .search-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 20px;
+}
+
+.search-engine-area .search-title .search-enginee-button {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.search-engine-area .search-title .search-enginee-button a {
+  color: #03a9f4;
+  text-decoration: none;
+}
+
+.search-engine-area .search-engine-info h6 {
+  font-size: 1.5rem;
+}
+
+.seo-content input, .seo-content textarea {
+  border-radius: 0;
+  padding: 23px;
+}
+
+.seo-content {
+  display: none;
+}
+
+.seo-content .form-group {
+  margin-bottom: 2rem;
+}
+
+.seo-content .form-control:focus {
+  color: #03a9f4;
+  border: 1px solid #03a9f4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.seo-content .form-control:focus::-webkit-input-placeholder {
+  color: #03a9f4;
+}
+
+.seo-content .form-control:focus:-ms-input-placeholder {
+  color: #03a9f4;
+}
+
+.seo-content .form-control:focus::-ms-input-placeholder {
+  color: #03a9f4;
+}
+
+.seo-content .form-control:focus::placeholder {
+  color: #03a9f4;
 }
 
 .list-unstyled ul li {

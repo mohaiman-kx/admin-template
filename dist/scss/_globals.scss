@@ -38,3 +38,44 @@ p {
 .border-bottom-light{
     border-bottom: 1px solid $color-grey-light;
 }
+
+
+.custom-btn-primary{
+    color: #fff;
+    background-color:$color-active-2 ;
+    border-color:$color-active-2 ;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+
+.active-now {
+    width: 15px;
+    height: 15px;
+    background: $color-active-3;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+.not-active {
+    width: 15px;
+    height: 15px;
+    background: $color-active-4;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.pending{
+    width: 15px;
+    height: 15px;
+    background: $color-active-5;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 5px;
+}

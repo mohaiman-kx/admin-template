@@ -136,11 +136,14 @@
             <div class="main-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12">
-                            <div class="main-content-title">
-                                <h3 class="mb-1">Hello there, <span class="main-user-title">Mehedi Hasan Khan</span>
-                                </h3>
-                                <p>Here is some information we gathered about your store</p>
+                        <div class="col-xl-6">
+                            <div class="page-title">
+                                <h4>Products</h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="page-sub-title text-right">
+                                <button class="btn custom-btn-primary">Create Product</button>
                             </div>
                         </div>
                     </div>
@@ -201,88 +204,98 @@
 
                         </div>
                     </div>
-                </div>
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-xl-8">
-                            <div class="summery-area">
-                                <ul class="">
-                                    <li><a href=""><span>60</span> Orders are ready to fullfill </a></li>
-                                    <li><a href=""><span>10</span> Payments to capture </a></li>
-                                    <li><a href="">No products out of stock</a></li>
-                                </ul>
-                            </div>
-                            <!-- top-products-area -->
-                            <div class="top-product-area mt-5">
-                                <div class="top-product-title border-bottom-light">
-                                    <h5>Top Products</h5>
-                                </div>
-                                <div class="top-product-details">
-                                    <div class="single-top-product">
-                                        <a href="">
-                                            <div class="single-top-product-image">
-                                                <img src="https://via.placeholder.com/80" alt="">
-                                            </div>
-                                            <div class="single-top-product-details">
-                                                <p class="name">T - Shirt</p>
-                                                <p class="size">M</p>
-                                                <p class="ordered">One Ordered</p>
-                                            </div>
-                                            <div class="single-top-product-price">
-                                                <p>BDT 450.00</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="single-top-product">
-                                        <a href="">
-                                            <div class="single-top-product-image">
-                                                <img src="https://via.placeholder.com/80" alt="">
-                                            </div>
-                                            <div class="single-top-product-details">
-                                                <p class="name">T - Shirt</p>
-                                                <p class="size">M</p>
-                                                <p class="ordered">One Ordered</p>
-                                            </div>
-                                            <div class="single-top-product-price">
-                                                <p>BDT 450.00</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="single-top-product">
-                                        <a href="">
-                                            <div class="single-top-product-image">
-                                                <img src="https://via.placeholder.com/80" alt="">
-                                            </div>
-                                            <div class="single-top-product-details">
-                                                <p class="name">T - Shirt</p>
-                                                <p class="size">M</p>
-                                                <p class="ordered">One Ordered</p>
-                                            </div>
-                                            <div class="single-top-product-price">
-                                                <p>BDT 450.00</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="activity">
-                                <div class="activity-header text-center">
-                                    <h5>Activity</h5>
-                                </div>
-                                <div class="activity-summary">
-                                    <ul>
-                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
-                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
-                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
-                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
-                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
-                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
-                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
-                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
-                                        <li>Order #4926 was fully paid <br> <small>an hour ago</small></li>
-                                    </ul>
+
+                    <div class="row mt-5">
+                        <div class="col-xl-12">
+                            <div class="product-table">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <th>Name</th>
+                                                <th>Type</th>
+                                                <th>Published</th>
+                                                <th>Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <td><img src="https://via.placeholder.com/50" alt=""></td>
+                                                <td>Juice</td>
+                                                <td><span class="active-now"></span> Published</td>
+                                                <td>BDT 650.00</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <td><img src="https://via.placeholder.com/50" alt=""></td>
+                                                <td>Juice</td>
+                                                <td><span class="pending"></span> Pending</td>
+                                                <td>BDT 650.00</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <td><img src="https://via.placeholder.com/50" alt=""></td>
+                                                <td>Juice</td>
+                                                <td><span class="not-active"></span> Not Published</td>
+                                                <td>BDT 650.00</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <td><img src="https://via.placeholder.com/50" alt=""></td>
+                                                <td>Juice</td>
+                                                <td><span class="active-now"></span> Published</td>
+                                                <td>BDT 650.00</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <td><img src="https://via.placeholder.com/50" alt=""></td>
+                                                <td>Juice</td>
+                                                <td><span class="active-now"></span> Published</td>
+                                                <td>BDT 650.00</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <td><img src="https://via.placeholder.com/50" alt=""></td>
+                                                <td>Juice</td>
+                                                <td><span class="active-now"></span> Published</td>
+                                                <td>BDT 650.00</td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <td><img src="https://via.placeholder.com/50" alt=""></td>
+                                                <td>Juice</td>
+                                                <td><span class="active-now"></span> Published</td>
+                                                <td>BDT 650.00</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th><input type="checkbox" name="" id=""></th>
+                                                <td><img src="https://via.placeholder.com/50" alt=""></td>
+                                                <td>Juice</td>
+                                                <td><span class="active-now"></span> Published</td>
+                                                <td>BDT 650.00</td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>

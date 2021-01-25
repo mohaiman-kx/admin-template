@@ -1,0 +1,117 @@
+.genarel-information{
+    box-shadow:$box-shadow-xl;
+    padding: 20px;
+    h6{
+        font-size: $font-size-lg;
+    }
+
+    .genarel-form .form-group{
+        margin-bottom: 2rem;
+    }
+
+    .genarel-form input{
+        border-radius: 0;
+        padding: 23px;
+    }
+    
+    .genarel-form textarea{
+        border-radius: 0;
+        padding:23px ;
+    }
+
+    .form-control:focus{
+        color: $color-active-2;
+        border:1px solid $color-active-2;
+        box-shadow: none;
+    }
+    .form-control:focus::placeholder{
+        color: $color-active-2;
+    }
+}
+
+.organize-product{
+    box-shadow:$box-shadow-xl;
+    padding: 20px;
+
+    h6{
+        font-size: $font-size-lg;
+    }
+    .organize-product-form .form-group{
+        margin-bottom: 2rem;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+
+    .organize-product-form .form-control{
+        border-radius:0 ;
+        height: 48px;
+    }
+}
+
+.product-table .table{
+    text-align: center;
+}
+
+.product-table input[type=checkbox]{
+    border-radius: 0;
+}
+
+.product-table .table td, .product-table .table th{
+    vertical-align: middle;
+}
+
+
+.search-engine-area {
+    box-shadow:$box-shadow-xl;
+    padding: 20px;
+
+    .search-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-grey-light;
+        padding-bottom: 20px;
+
+        .search-enginee-button {
+            text-transform: uppercase;
+            font-weight: 600;
+
+            a{
+                color: $color-active-2;
+                text-decoration: none;
+            }
+
+        }
+    }
+
+    .search-engine-info h6{
+        font-size: $font-size-lg;
+    }
+}
+
+.seo-content input , .seo-content textarea {
+    border-radius: 0;
+    padding: 23px;
+}
+
+.seo-content {
+
+    display:none;
+
+    .form-group{
+        margin-bottom: 2rem;
+    }
+
+    .form-control:focus{
+        color: $color-active-2;
+        border:1px solid $color-active-2;
+        box-shadow: none;
+    }
+    .form-control:focus::placeholder{
+        color: $color-active-2;
+    }
+}

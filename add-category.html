@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="dist/flaticon/flaticon.css">
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <!--sass complied css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header text-center p-4">
+                <!-- <h3>Admin Template</h3> -->
+                <img src="images/logo.svg" alt="">
+                <!-- <strong></strong> -->
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="">
+                    <a href="">
+                        <i class="flaticon-house"></i>
+                        <span class="menu-title">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="flaticon-product"></i> <span class="menu-title">Products</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href="#">All Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Product Catagory</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="flaticon-choices"></i>
+                        <span class="menu-title">Orders</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Orders</a>
+                        </li>
+                        <li>
+                            <a href="#">Draft</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="flaticon-order"></i>
+                        <span class="menu-title">inventory</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="flaticon-wallet"></i>
+                        <span class="menu-title">Payment</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu3">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="flaticon-settings"></i>
+                        <span class="menu-title">Setting</span>
+                    </a>
+                </li>
+
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    admin@mail.com
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title">
+                                <h4>Create New Category</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-xl-12">
+                            <div class="genarel-information">
+                                <h6>General Information</h6>
+                                <div class="genarel-form mt-4">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Category Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea name="" id="" cols="10" rows="5" class="form-control"
+                                                placeholder="Catagory Description"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-xl-12">
+                            <div class="search-engine-area">
+                                <div class="search-title">
+                                    <div class="search-engine-info">
+                                        <h6>Search Engine Preview</h6>
+                                    </div>
+                                    <div class="search-enginee-button">
+                                        <a href="#" id='editSeo'>Edit Website SEO</a>
+                                    </div>
+                                </div>
+                                <div class="no-seo-area mt-4">
+                                    <p>Add search engine title and description to make this category easier to find</p>
+                                </div>
+                                <div class="seo-content mt-4">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Slug">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search Engine Title">
+                                            <small>If empty, the preview shows what will be autogenerated.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea name="" id="" cols="10" rows="5" class="form-control"
+                                                placeholder="Search Engine Description"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-xl-12">
+                            <div class="meta-data-info">
+                                <h6>Metadata</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="dist/js/jquery-3.5.1.min.js"></script>
+    <script src="dist/bootstrap/js/popper.min.js"></script>
+    <script src="dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>
