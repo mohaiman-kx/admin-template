@@ -1,0 +1,246 @@
+.information-block {
+    box-shadow: $box-shadow-xl;
+    padding: 20px;
+
+    .block-title {
+        h6 {
+            font-size: $font-size-lg;
+        }
+    }
+}
+
+.right-side-block {
+    box-shadow: $box-shadow-xl;
+    padding: 20px;
+
+    .block-title {
+        h6 {
+            font-size: $font-size-lg;
+        }
+    }
+}
+
+
+.input-box-area {
+
+    .form-group {
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .form-group input,
+    .form-group textarea {
+        border-radius: 0;
+        padding: 23px 12px;
+    }
+
+    .form-group select {
+        border-radius: 0;
+        height: 48px;
+    }
+
+    .form-control:focus {
+        color: $color-active-2;
+        border: 1px solid $color-active-2;
+        box-shadow: none;
+    }
+
+    .form-control:focus::placeholder {
+        color: $color-active-2;
+    }
+}
+
+.for-radio {
+    label.form-check-label {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+        position: relative;
+        top: -3px;
+    }
+}
+
+
+.image-upload {
+
+    .image-upload-title h6 {
+        font-size: $font-size-lg;
+    }
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.variants-area {
+    input {
+        border-radius: 0;
+        padding: 23px 12px;
+        margin-bottom: 15px;
+    }
+}
+
+.information-block-save-botton button {
+    margin-left: 20px;
+}
+
+.block-title-border {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+}
+
+
+
+.variants-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-grey-light;
+    padding-bottom: 20px;
+
+    .variants-info h6 {
+        font-size: $font-size-lg;
+    }
+
+    .variants-button {
+        text-transform: uppercase;
+        font-weight: 600;
+
+        a {
+            color: $color-active-2;
+            text-decoration: none;
+        }
+
+    }
+}
+
+.v-delete-button {
+    position: relative;
+    top: 0px;
+    left: -7px;
+
+    button {
+        padding: 12px;
+        border-radius: 0;
+    }
+}
+
+#addVariants {
+    cursor: pointer;
+
+    &:hover {
+        color: $color-active-2;
+    }
+}
+
+.uppy-Dashboard-AddFiles-info {
+    display: none !important;
+}
+
+.page-title-button-area {
+    button {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+#imageListId {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    div {
+        display: inline-block;
+    }
+
+    img {
+        width: 135px;
+    }
+}
+
+
+
+#imageListId img {
+    width: 130px;
+    margin-left: 20px;
+}
+
+
+.listitemClass {
+    position: relative;
+}
+
+.remove-image {
+    position: absolute;
+    left: 130px;
+    top: -15px;
+    border-radius: 10em;
+    padding: 2px 6px 3px;
+    text-decoration: none;
+    font: 700 21px/20px sans-serif;
+    background: #555;
+    border: 3px solid #fff;
+    color: #FFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+
+.remove-image:hover {
+    background: #E54E4E;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.remove-image:active {
+    background: #E54E4E;
+
+}
+
+.table-tab ul li {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #607D8B;
+    padding: 3px;
+    margin-right: 5px;
+}
+
+.table-tab ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.seo-content-view input , .seo-content-view textarea {
+    border-radius: 0;
+    padding: 23px 12px;
+}
+
+.seo-content-view {
+
+
+    .form-group{
+        margin-bottom: 2rem;
+    }
+
+    .form-control:focus{
+        color: $color-active-2;
+        border:1px solid $color-active-2;
+        box-shadow: none;
+    }
+    .form-control:focus::placeholder{
+        color: $color-active-2;
+    }
+}

@@ -12,6 +12,8 @@
     <!-- flaticon css -->
     <link rel="stylesheet" href="dist/flaticon/flaticon.css">
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/multiSelect.css">
+
     <!--sass complied css-->
     <link rel="stylesheet" href="dist/css/style.css">
     <!-- Font Awesome JS -->
@@ -35,7 +37,7 @@
 
             <ul class="list-unstyled components">
                 <li class="">
-                    <a href="">
+                    <a href="index.html">
                         <i class="flaticon-house"></i>
                         <span class="menu-title">Home</span>
                     </a>
@@ -47,13 +49,13 @@
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu2">
                         <li>
-                            <a href="#">All Products</a>
+                            <a href="all-products.html">All Products</a>
                         </li>
                         <li>
-                            <a href="#">Add Products</a>
+                            <a href="add-product.html">Add Products</a>
                         </li>
                         <li>
-                            <a href="#">Product Catagory</a>
+                            <a href="add-category.html">Product Catagory</a>
                         </li>
 
 
@@ -143,7 +145,18 @@
                         </div>
                         <div class="col-xl-6">
                             <div class="page-sub-title text-right">
-                                <button class="btn custom-btn-primary">Create Product</button>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle btn-custom-dropdown" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Export Data</a>
+                                        <a class="dropdown-item" href="#">Import Data</a>
+                                    </div>
+                                </div>
+                                <a href='add-product.html' class="btn custom-btn-primary">Create Product</a>
                             </div>
                         </div>
                     </div>
@@ -154,9 +167,9 @@
                                     <img src="images/icons/sales.svg" alt="">
                                 </div>
                                 <div class="stats-card-content">
-                                    <p class="mb-1">Sales</p>
-                                    <p class="today mb-1">Today</p>
-                                    <h4>BDT 52570</h4>
+                                    <p class="mb-1">Total</p>
+                                    <p class="today mb-1">Product</p>
+                                    <h4>500</h4>
                                 </div>
                             </div>
 
@@ -168,9 +181,9 @@
                                     <img src="images/icons/orders.svg" alt="">
                                 </div>
                                 <div class="stats-card-content">
-                                    <p class="mb-1">Orders</p>
-                                    <p class="today mb-1">Today</p>
-                                    <h4>20</h4>
+                                    <p class="mb-1">Published</p>
+                                    <p class="today mb-1">Product</p>
+                                    <h4>300</h4>
                                 </div>
                             </div>
 
@@ -182,8 +195,8 @@
                                     <img src="images/icons/products.svg" alt="">
                                 </div>
                                 <div class="stats-card-content">
-                                    <p class="mb-1">Products</p>
-                                    <p class="today mb-1">Total</p>
+                                    <p class="mb-1">Pending</p>
+                                    <p class="today mb-1">Product</p>
                                     <h4>50</h4>
                                 </div>
                             </div>
@@ -196,16 +209,53 @@
                                     <img src="images/icons/pay.svg" alt="">
                                 </div>
                                 <div class="stats-card-content">
-                                    <p class="mb-1">Payment</p>
-                                    <p class="today mb-1">Today</p>
-                                    <h4>2000</h4>
+                                    <p class="mb-1">Draft</p>
+                                    <p class="today mb-1">Prodcut</p>
+                                    <h4>50</h4>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-
                     <div class="row mt-5">
+                        <div class="col-xl-6">
+                            <!-- <div class="filter-block">
+                                <select id="example-getting-started" multiple="multiple">
+                                    <option value="cheese">Cheese</option>
+                                    <option value="tomatoes">Tomatoes</option>
+                                    <option value="mozarella">Mozzarella</option>
+                                    <option value="mushrooms">Mushrooms</option>
+                                    <option value="pepperoni">Pepperoni</option>
+                                    <option value="onions">Onions</option>
+                                </select>
+                            </div> -->
+                            <div class="filter-block">
+
+                                <div class="select-box">
+                                    <select class="selectpicker" multiple="" data-live-search="true"
+                                        data-live-search-placeholder="Search" tabindex="-98">
+                                        <optgroup label="Foods">
+                                            <option>Orange</option>
+                                            <option>Apple</option>
+                                        </optgroup>
+                                        <optgroup label="Cloths">
+                                            <option>Panjabi</option>
+                                            <option>Shirt</option>
+                                            <option>Pants</option>
+                                            <option>Shoes</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="search-table">
+                                <input class="form-control" id="myInput" type="text" placeholder="Product Search...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-1">
                         <div class="col-xl-12">
                             <div class="product-table">
                                 <div class="table-responsive">
@@ -219,7 +269,7 @@
                                                 <th>Price</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody id='myTable'>
                                             <tr>
 
                                                 <th><input type="checkbox" name="" id=""></th>
@@ -270,7 +320,7 @@
 
                                                 <th><input type="checkbox" name="" id=""></th>
                                                 <td><img src="https://via.placeholder.com/50" alt=""></td>
-                                                <td>Juice</td>
+                                                <td>Orange</td>
                                                 <td><span class="active-now"></span> Published</td>
                                                 <td>BDT 650.00</td>
 
@@ -281,7 +331,7 @@
                                                 <td><img src="https://via.placeholder.com/50" alt=""></td>
                                                 <td>Juice</td>
                                                 <td><span class="active-now"></span> Published</td>
-                                                <td>BDT 650.00</td>
+                                                <td>BDT 700.00</td>
 
                                             </tr>
 
@@ -291,7 +341,7 @@
                                                 <td><img src="https://via.placeholder.com/50" alt=""></td>
                                                 <td>Juice</td>
                                                 <td><span class="active-now"></span> Published</td>
-                                                <td>BDT 650.00</td>
+                                                <td>BDT 900.00</td>
 
                                             </tr>
                                         </tbody>
@@ -311,7 +361,15 @@
     <script src="dist/js/jquery-3.5.1.min.js"></script>
     <script src="dist/bootstrap/js/popper.min.js"></script>
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/js/bootstrap-multiselect.min.js"></script>
+    <script src="dist/js/multiSelect.js"></script>
     <script src="dist/js/script.js"></script>
+    <!-- <script type="text/javascript">
+        $('#example-multiple-optgroups').multiselect({
+            enableClickableOptGroups: true
+        });
+    </script> -->
+
 </body>
 
 </html>

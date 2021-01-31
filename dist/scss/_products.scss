@@ -1,3 +1,22 @@
+.search-table {
+
+    input{
+    border-radius: 0;
+    margin-bottom: 10px;
+    padding: 23px 12px;
+  
+
+    }
+    .form-control:focus{
+        color: $color-active-2;
+        border:1px solid $color-active-2;
+        box-shadow: none;
+        
+    }
+}
+
+
+
 .genarel-information{
     box-shadow:$box-shadow-xl;
     padding: 20px;
@@ -95,7 +114,7 @@
 
 .seo-content input , .seo-content textarea {
     border-radius: 0;
-    padding: 23px;
+    padding: 23px 12px;
 }
 
 .seo-content {
@@ -113,5 +132,87 @@
     }
     .form-control:focus::placeholder{
         color: $color-active-2;
+    }
+}
+
+.image-upload-area{
+    box-shadow:$box-shadow-xl;
+    padding: 20px;
+
+    h6{
+        font-size: $font-size-lg;
+    }
+    .search-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+.visibility-area{
+    box-shadow:$box-shadow-xl;
+    padding: 20px;
+    h6{
+        font-size: $font-size-lg;
+    }
+    .visibility-area-form{
+        .form-check{
+            margin-bottom: 1rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .form-check-label{
+            font-size: $font-size-lm;
+        }
+    }
+}
+
+
+.save-area{
+    box-shadow:$box-shadow-xl;
+    padding: 20px;
+
+    button{
+        margin-right: 10px;
+    }
+
+}
+
+
+.page-sub-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    .btn-custom-dropdown{
+        border-radius: 0;
+        margin-right: 10px;
+    }
+}
+
+.filter-block .custom-select{
+    height: calc(2.9rem + 2px);
+    border-radius: 0;
+    margin-right: 20px;
+    
+}
+
+
+.select-box{
+    .bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover{
+        border-radius: 0;
+        padding: 10px;
+        border: 1px solid #ededed;
+    }
+    .form-control{
+        border-radius: 0;
+    }
+
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+        width: 350px;
     }
 }

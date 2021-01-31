@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="dist/flaticon/flaticon.css">
+    <link rel="stylesheet" href="dist/css/jquery-ui-1.10.4.css">
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <!-- uppy css -->
+    <link rel="stylesheet" href="dist/css/uppy.min.css">
+    <!--sass complied css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header text-center p-4">
+                <!-- <h3>Admin Template</h3> -->
+                <img src="images/logo.svg" alt="">
+                <!-- <strong></strong> -->
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="">
+                    <a href="index.html">
+                        <i class="flaticon-house"></i>
+                        <span class="menu-title">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="flaticon-product"></i> <span class="menu-title">Products</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href="all-products.html">All Products</a>
+                        </li>
+                        <li>
+                            <a href="add-product.html">Add Products</a>
+                        </li>
+                        <li>
+                            <a href="add-category.html">Product Catagory</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="flaticon-choices"></i>
+                        <span class="menu-title">Orders</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Orders</a>
+                        </li>
+                        <li>
+                            <a href="#">Draft</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="flaticon-order"></i>
+                        <span class="menu-title">inventory</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="flaticon-wallet"></i>
+                        <span class="menu-title">Payment</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu3">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="flaticon-settings"></i>
+                        <span class="menu-title">Setting</span>
+                    </a>
+                </li>
+
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    admin@mail.com
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="page-title">
+                                <h4>Add New Product</h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="page-title-button-area text-right">
+                                <button class="btn btn-warning custom-btn-warning">Edit</button>
+                                <button class="btn btn-primary custom-btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-8">
+                                    <div class="information-block">
+                                        <div class="block-title">
+                                            <h6>General Information</h6>
+                                        </div>
+                                        <div class="input-box-area mt-4">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" value="Orange" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea name="" cols="10" rows="5" class="form-control"
+                                                        placeholder="Product Description" readonly>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsam natus facere ex impedit veniam explicabo esse ut porro nesciunt? Nemo sapiente sit ut impedit quidem, iusto dolor laudantium aut!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsam natus facere ex impedit veniam explicabo esse ut porro nesciunt? Nemo sapiente sit ut impedit quidem, iusto dolor laudantium aut!
+                                                    </textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="information-block mt-5">
+                                        <div class="image-upload mb-3">
+                                            <div class="image-upload-title">
+                                                <h6>Images</h6>
+                                            </div>
+                                        </div>
+                                        <div class="product-image-gallary">
+                                            <div id="imageListId">
+                                                <div id="imageNo1" class="listitemClass">
+                                                    <img src="https://via.placeholder.com/150" alt="">
+                                                    <a class="remove-image" href="javascript:void(0)">&#215;</a>
+                                                </div>
+
+                                                <div id="imageNo2" class="listitemClass">
+                                                    <img src="https://via.placeholder.com/150" alt="">
+                                                    <a class="remove-image" href="javascript:void(0)">&#215;</a>
+                                                </div>
+
+                                                <div id="imageNo3" class="listitemClass">
+                                                    <img src="https://via.placeholder.com/150" alt="">
+                                                    <a class="remove-image" href="javascript:void(0)">&#215;</a>
+                                                </div>
+
+                                                <div id="imageNo4" class="listitemClass">
+                                                    <img src="https://via.placeholder.com/150" alt="">
+                                                    <a class="remove-image" href="javascript:void(0)">&#215;</a>
+                                                </div>
+                                                <div id="imageNo5" class="listitemClass">
+                                                    <img src="https://via.placeholder.com/150" alt="">
+                                                    <a class="remove-image" href="javascript:void(0)">&#215;</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <div class="search-engine-area mt-5">
+                                        <div class="search-title">
+                                            <div class="search-engine-info">
+                                                <h6>Search Engine Preview</h6>
+                                            </div>
+                                            <div class="search-enginee-button">
+                                                <a href="#" id='editSeo'>Edit Website SEO</a>
+                                            </div>
+                                        </div>
+                                        <div class="no-seo-area mt-4">
+                                            <p>Add search engine title and description to make this category easier to
+                                                find</p>
+                                        </div>
+                                        <div class="seo-content mt-4">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Slug">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Search Engine Title">
+                                                    <small>If empty, the preview shows what will be
+                                                        autogenerated.</small>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="SEO Meta Keyword">
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea name="" id="" cols="10" rows="5" class="form-control"
+                                                        placeholder="Search Engine Description"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="search-engine-area mt-5">
+                                        <div class="search-title">
+                                            <div class="search-engine-info">
+                                                <h6>Search Engine Preview</h6>
+                                            </div>
+                                        </div>
+                                        <div class="seo-content-view mt-4">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" value="red-orange" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control"
+                                                value="Orange" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control"
+                                                 value="Orange, Fruite, Food" readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea name="" id="" cols="10" rows="3" class="form-control"
+                                                        placeholder="Search Engine Description" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident ea saepe ducimus, beatae delectus minus voluptatibus est eius et? Accusantium fuga officiis aut magnam ipsum eos excepturi, a quod.
+                                                    </textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="information-block mt-5">
+                                        <div class="variants-title">
+                                            <div class="variants-info">
+                                                <h6>Variants</h6>
+                                            </div>
+                                            <!-- <div class="variants-button">
+                                                <a id='addVariants' onclick="addVarient()">Add Variants</a>
+                                            </div> -->
+                                        </div>
+                                        <div class="variants-area mt-4">
+                                            <!-- <form id='form-container'>
+                                                <div class="row" id="v-items">
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" placeholder="Attribute">
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" placeholder="Values">
+                                                    </div>
+                                                    <div class="v-delete-button">
+                                                        <button class="btn btn-sm btn-outline-danger"
+                                                            id="vDelete">Delete</button>
+                                                    </div>
+                                                </div>
+                                            </form> -->
+                                            <div class="variants-staff">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Attribute</th>
+                                                            <th>Values</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Color</td>
+                                                            <td>
+                                                                <div class="table-tab">
+                                                                    <ul>
+                                                                        <li>Blue</li>
+                                                                        <li>Pink</li>
+                                                                        <li>Yellow</li>
+                                                                        <li>Rainbow</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td>Gender</td>
+                                                            <td>
+                                                                <div class="table-tab">
+                                                                    <ul>
+                                                                        <li>Men</li>
+                                                                        <li>Women</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Size</td>
+                                                            <td>
+                                                                <div class="table-tab">
+                                                                    <ul>
+                                                                        <li>XS</li>
+                                                                        <li>XL</li>
+                                                                        <li>S</li>
+                                                                        <li>M</li>
+                                                                        <li>L</li>
+                                                                        <li>XL</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                   
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- right side block  -->
+                                <div class="col-xl-4">
+                                    <div class="right-side-block">
+                                        <div class="block-title">
+                                            <h6>Organize Product</h6>
+                                        </div>
+                                        <div class="input-box-area mt-4">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="BDT 750"
+                                                        readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="prodcut-type">Product Type</label>
+                                                    <input type="text" class="form-control" placeholder="Grocery"
+                                                        readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="prodcut-type">Product Category</label>
+                                                    <input type="text" class="form-control" placeholder="Category"
+                                                        readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="prodcut-type">Product Size</label>
+                                                    <input type="text" class="form-control" placeholder="Large"
+                                                        readonly>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="prodcut-type">Product Color</label>
+                                                    <input type="text" class="form-control" placeholder="Silver"
+                                                        readonly>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="right-side-block mt-5">
+                                        <div class="block-title">
+                                            <h6>Visibility</h6>
+                                        </div>
+                                        <div class="input-box-area mt-4 for-radio">
+                                            <form>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios1" value="option1">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        Published
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        Not published
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios3" value="option3">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        Save as Draft
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="information-block information-block-save-botton text-right">
+                                        <button class="btn custom-btn">Back</button>
+                                        <button class="btn btn-warning custom-btn-warning">Edit</button>
+                                        <button class="btn custom-btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="dist/js/jquery-3.5.1.min.js"></script>
+    <script src="dist/bootstrap/js/popper.min.js"></script>
+    <script src="dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/js/jquery-ui-1.10.4.js"></script>
+    <script src="dist/js/script.js"></script>
+    <script>
+        $(function () {
+            $("#imageListId").sortable({
+                update: function (event, ui) {
+                    getIdsOfImages();
+                } //end update          
+            });
+        });
+    </script>
+    <script>
+        $('.remove-image').on('click', function () {
+            $(this).parent('.listitemClass').remove();
+        });
+
+        function getIdsOfImages() {
+            var values = [];
+            $('.listitemClass').each(function (index) {
+                values.push($(this).attr("id")
+                    .replace("imageNo", ""));
+            });
+            $('#outputvalues').val(values);
+            console.log(values)
+        }
+    </script>
+
+</body>
+
+</html>
