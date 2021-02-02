@@ -29,6 +29,11 @@ p {
     padding: 0;
 }
 
+
+*:focus {
+    outline: none;
+}
+
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -93,4 +98,9 @@ p {
     vertical-align: middle;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+
+.text-color-grey{
+    color: $color-grey;
 }

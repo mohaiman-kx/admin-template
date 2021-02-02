@@ -244,3 +244,26 @@
         color: $color-active-2;
     }
 }
+
+.table-variants{
+    .form-group{
+        margin-bottom: 0;
+    }
+    .form-control{
+        border-radius: 0;
+        outline: 0 !important;
+    }
+    button{
+        border-radius: 0;
+        vertical-align: baseline;
+        width: 100%;
+        padding:7px;
+    }
+
+}
+
+.variants-button a{
+        color: #03a9f4;
+    text-decoration: none;
+    }
+

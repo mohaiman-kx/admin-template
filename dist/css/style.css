@@ -30,6 +30,10 @@ p {
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +98,10 @@ p {
   vertical-align: middle;
   border-radius: 50%;
   margin-right: 5px;
+}
+
+.text-color-grey {
+  color: #9e9e9e;
 }
 
 #sidebar {
@@ -902,6 +910,64 @@ a[data-toggle="collapse"] {
 
 .seo-content-view .form-control:focus::placeholder {
   color: #03a9f4;
+}
+
+.table-variants .form-group {
+  margin-bottom: 0;
+}
+
+.table-variants .form-control {
+  border-radius: 0;
+  outline: 0 !important;
+}
+
+.table-variants button {
+  border-radius: 0;
+  vertical-align: baseline;
+  width: 100%;
+  padding: 7px;
+}
+
+.variants-button a {
+  color: #03a9f4;
+  text-decoration: none;
+}
+
+.c-v-modal .modal-content {
+  border-radius: 0;
+}
+
+.c-v-modal input {
+  border-radius: 0;
+  padding: 23px 15px;
+}
+
+.c-v-modal button {
+  border-radius: 0;
+}
+
+.nothing-to-invoice {
+  background: rgba(211, 211, 211, 0.5);
+  padding: 3px;
+}
+
+.to-invoice {
+  background: #00a09d57;
+  padding: 3px;
+}
+
+.login-wrapper-page {
+  margin: 7.5% auto;
+  position: relative;
+}
+
+.login-wrapper-page .card {
+  border-radius: 0;
+}
+
+.login-form input {
+  border-radius: 0;
+  padding: 23px 15px;
 }
 
 .list-unstyled ul li {
