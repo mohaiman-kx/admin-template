@@ -1,9 +1,138 @@
-.nothing-to-invoice{
+.nothing-to-invoice {
     background: rgba(211, 211, 211, 0.5);
     padding: 3px;
 }
 
-.to-invoice{
+.to-invoice {
     background: #00a09d57;
     padding: 3px;
+}
+
+.single-order-counter {
+    width: 130px;
+
+
+    .qty .count {
+        color: #000;
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 30px;
+        padding: 0 2px;
+        min-width: 35px;
+        text-align: center;
+    }
+
+    .qty .plus {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 1.25rem;
+    }
+
+    .qty .minus {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        color: white;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background-clip: padding-box;
+        font-size: 1.25rem;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    .minus:hover {
+        background-color: $color-text-dark !important;
+    }
+
+    .plus:hover {
+        background-color: $color-text-dark !important;
+    }
+
+    /*Prevent text selection*/
+    span {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    input {
+        border: 0;
+        width: 2%;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input:disabled {
+        background-color: white;
+    }
+
+}
+
+
+.table-pagination nav ul li a{
+    color: $color-text-deep-dark;
+}
+
+.table-pagination{
+    .pagination{
+        border-radius: 0 !important;
+        float: right;
+    }
+    .page-item:first-child .page-link{
+        border-radius: 0;
+    }
+    .page-item:last-child .page-link{
+        border-radius: 0;
+    }
+}
+
+
+
+.order-action{
+    .action-form-group{
+    margin-bottom: 0 !important;
+    }
+    .form-control{
+        border-radius: 0px;
+    }
+}
+
+
+.customer-email {
+    padding: 20px 0px;
+    font-size: 1.05rem;
+}
+
+
+.customer-email a {
+    color:$color-text-dark;
+    margin-top: 10px;
+    display: block;
+}
+
+.shipping-address-context p {
+    text-align: left;
+    font-size: 1.05rem;
+    line-height: 30px;
+}
+
+
+.notes-context p {
+    font-size: 1.05rem;
+    line-height: 30px;
 }

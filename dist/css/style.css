@@ -956,6 +956,126 @@ a[data-toggle="collapse"] {
   padding: 3px;
 }
 
+.single-order-counter {
+  width: 130px;
+  /*Prevent text selection*/
+}
+
+.single-order-counter .qty .count {
+  color: #000;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 30px;
+  padding: 0 2px;
+  min-width: 35px;
+  text-align: center;
+}
+
+.single-order-counter .qty .plus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+
+.single-order-counter .qty .minus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+  font-size: 1.25rem;
+}
+
+.single-order-counter div {
+  text-align: center;
+}
+
+.single-order-counter .minus:hover {
+  background-color: #2c3e50 !important;
+}
+
+.single-order-counter .plus:hover {
+  background-color: #2c3e50 !important;
+}
+
+.single-order-counter span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.single-order-counter input {
+  border: 0;
+  width: 2%;
+}
+
+.single-order-counter input::-webkit-outer-spin-button,
+.single-order-counter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.single-order-counter input:disabled {
+  background-color: white;
+}
+
+.table-pagination nav ul li a {
+  color: #525252;
+}
+
+.table-pagination .pagination {
+  border-radius: 0 !important;
+  float: right;
+}
+
+.table-pagination .page-item:first-child .page-link {
+  border-radius: 0;
+}
+
+.table-pagination .page-item:last-child .page-link {
+  border-radius: 0;
+}
+
+.order-action .action-form-group {
+  margin-bottom: 0 !important;
+}
+
+.order-action .form-control {
+  border-radius: 0px;
+}
+
+.customer-email {
+  padding: 20px 0px;
+  font-size: 1.05rem;
+}
+
+.customer-email a {
+  color: #2c3e50;
+  margin-top: 10px;
+  display: block;
+}
+
+.shipping-address-context p {
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 30px;
+}
+
+.notes-context p {
+  font-size: 1.05rem;
+  line-height: 30px;
+}
+
 .login-wrapper-page {
   margin: 7.5% auto;
   position: relative;

@@ -182,10 +182,28 @@
                                                         <td><img src="https://via.placeholder.com/50" alt=""></td>
                                                         <td>Red Shirt</td>
                                                         <td>12345678</td>
-                                                        <td>2</td>
+                                                        <td class="single-order-counter">
+                                                            <div class="qty">
+                                                                <span class="minus bg-dark">-</span>
+                                                                <input type="number" class="count" name="qty" value="1">
+                                                                <span class="plus bg-dark">+</span>
+                                                            </div>
+                                                        </td>
                                                         <td>BDT 750</td>
                                                         <td>BDT 1500</td>
-                                                        <td><span class="active-now"></span> Fullfilled</td>
+                                                        <td class="order-action">
+                                                            <div class="form-group action-form-group">
+                                                                <select class="form-control"
+                                                                    id="exampleFormControlSelect1">
+                                                                    <option>
+                                                                        <span class="active-now"></span> Fullfill
+                                                                    </option>
+                                                                    <option>Pending</option>
+                                                                    <option>Draft</option>
+                                                                    <option>Cancel</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td><img src="https://via.placeholder.com/50" alt=""></td>
@@ -208,94 +226,103 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </div>                 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="genarel-information mt-5">
+                                <h6>Cash on Delivery</h6>
+                                <div class="payment-amount-form mt-4">
+                                    <div class="payment-table">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left">Subtotal</td>
+                                                    <td class="text-center">1 items</td>
+                                                    <td class="text-right">BDT 650.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">Taxes</td>
+                                                    <td class="text-center">does not apply</td>
+                                                    <td class="text-right">BDT 00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">Shipping</td>
+                                                    <td class="text-center">Pathao</td>
+                                                    <td class="text-right">BDT 60.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Total</strong>
+                                                    </td>
+                                                    <td></td>
+                                                    <td class="text-right">
+                                                        <strong>
+                                                            BDT 710.00
+                                                        </strong>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4">
                             <div class="organize-product">
-                                <h6>Organize Product</h6>
-                                <div class="organize-product-form mt-4">
-                                    <form>
-                                        <div class="form-group">
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option disabled selected>Product Type</option>
-                                                <option>Juice</option>
-                                                <option>Oil</option>
-                                                <option>Paint</option>
-                                                <option>Chips</option>
-                                            </select>
-                                        </div>
+                                <div class="organize-product-context">
+                                    <div class="organize-product-title border-bottom-light pb-2">
+                                        <h6>Customer Information</h6>
+                                    </div>
+                                    <div class="customer-email">
+                                        <p>customer@email.com</p>
+                                        <a href="">View Profile</a>
+                                    </div>
+                                </div>
 
-                                        <div class="form-group">
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option disabled selected>Select Catagory</option>
-                                                <option>Juice</option>
-                                                <option>Oil</option>
-                                                <option>Paint</option>
-                                                <option>Chips</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option disabled selected>Collections</option>
-                                                <option>Juice</option>
-                                                <option>Oil</option>
-                                                <option>Paint</option>
-                                                <option>Chips</option>
-                                            </select>
-                                            <small>*Optional. Adding product to collection helps users find it.</small>
-                                        </div>
+                                <div class="organize-product-context mt-4">
+                                    <div class="organize-product-title border-bottom-light pb-2">
+                                        <h6>Customer Contact</h6>
+                                    </div>
+                                    <div class="customer-email">
+                                        <p><a href="">customer@email.com</a></p>
+                                        <p><a href="">+88018 77 66 8833</a></p>
+                                    </div>
+                                </div>
 
-                                    </form>
+                            </div>
+
+                            <div class="organize-product mt-5">
+                                <div class="organize-product-context">
+                                    <div class="organize-product-title border-bottom-light pb-2">
+                                        <h6>Shipping Address</h6>
+                                    </div>
+                                    <div class="shipping-address-context pt-3">
+                                        <p>41/2, A, Haricohon Roy Road, Faridabad, Dhaka - 1204</p>
+                                    </div>
+                                </div>
+                                <div class="organize-product-context mt-5">
+                                    <div class="organize-product-title border-bottom-light pb-2">
+                                        <h6>Billing Address</h6>
+                                    </div>
+                                    <div class="shipping-address-context pt-3">
+                                        <p>Plot 39/2, Kalachadpur (North Baridhara), Gulshan, Dhaka 1212, Bangladesh.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="visibility-area mt-5">
-                                <h6>Visibility</h6>
-                                <div class="visibility-area-form mt-5">
-                                    <form>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios"
-                                                id="exampleRadios1" value="option1" checked>
-                                            <label class="form-check-label" for="exampleRadios1">
-                                                Published
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios"
-                                                id="exampleRadios2" value="option2">
-                                            <label class="form-check-label" for="exampleRadios2">
-                                                Not published
-                                            </label>
-                                        </div>
-                                    </form>
+                            <div class="organize-product mt-5">
+                                <div class="organize-product-context">
+                                    <div class="organize-product-title border-bottom-light pb-2">
+                                        <h6>Notes</h6>
+                                    </div>
+                                    <div class="notes-context pt-3">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti earum non
+                                            doloribus praesentium ipsam modi, illum minus magni ratione tempora
+                                            inventore.</p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="visibility-area mt-5">
-                                <h6>Taxes</h6>
-                                <div class="visibility-area-form mt-4">
-                                    <form>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios"
-                                                id="taxes1" value="option1" checked>
-                                            <label class="form-check-label" for="taxes1">
-                                                Override the product type's tax rate
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios"
-                                                id="taxes2" value="option2">
-                                            <label class="form-check-label" for="taxes2">
-                                                Charge taxes on this product
-                                            </label>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -311,6 +338,20 @@
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
     <script src="dist/js/bootstrap-multiselect.min.js"></script>
     <script src="dist/js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.count').prop('disabled', true);
+            $(document).on('click', '.plus', function () {
+                $('.count').val(parseInt($('.count').val()) + 1);
+            });
+            $(document).on('click', '.minus', function () {
+                $('.count').val(parseInt($('.count').val()) - 1);
+                if ($('.count').val() == 0) {
+                    $('.count').val(1);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
