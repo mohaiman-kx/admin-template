@@ -135,6 +135,7 @@
 
             <div class="main-content">
                 <div class="container">
+                    
                     <div class="row">
                         <div class="col-xl-6">
                             <div class="page-title">
@@ -160,6 +161,64 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="row mt-5">
+                        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                            <div class="stats-card">
+                                <div class="stats-card-icon">
+                                    <img src="images/icons/sales.svg" alt="">
+                                </div>
+                                <div class="stats-card-content">
+                                    <p class="mb-1">Active</p>
+                                    <p class="today mb-1">Order</p>
+                                    <h4>7</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                            <div class="stats-card">
+                                <div class="stats-card-icon">
+                                    <img src="images/icons/orders.svg" alt="">
+                                </div>
+                                <div class="stats-card-content">
+                                    <p class="mb-1">Pending</p>
+                                    <p class="today mb-1">Order</p>
+                                    <h4>20</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                            <div class="stats-card">
+                                <div class="stats-card-icon">
+                                    <img src="images/icons/products.svg" alt="">
+                                </div>
+                                <div class="stats-card-content">
+                                    <p class="mb-1">Fullfill</p>
+                                    <p class="today mb-1">Order</p>
+                                    <h4>50</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                            <div class="stats-card">
+                                <div class="stats-card-icon">
+                                    <img src="images/icons/pay.svg" alt="">
+                                </div>
+                                <div class="stats-card-content">
+                                    <p class="mb-1">Draft</p>
+                                    <p class="today mb-1">Order</p>
+                                    <h4>2</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     <div class="row mt-5">
                         <div class="col-xl-12">
                             <div class="product-table">
@@ -172,7 +231,8 @@
                                                 <th>Date</th>
                                                 <th>Customer</th>
                                                 <th>Payment</th>
-                                                <th>Status</th>
+                                                <th>Order Status</th>
+                                                <th>Fullfill Status</th>
                                                 <th>Total</th>
                                             </tr>
                                         </thead>
@@ -183,7 +243,8 @@
                                                 <td>02/02/2021</td>
                                                 <td>Mehadi Hasan</td>
                                                 <td>Cash on Delivery</td>
-                                                <td class="t-status"><span class="pending"></span>Pending</td>
+                                                <td class="t-status"><span class="o-pending">Pending</span></td>
+                                                <td><span class="o-complate">Fullfill</span></td>
                                                 <td>BDT 650.00</td>
                                             </tr>
                                             <tr>
@@ -192,7 +253,8 @@
                                                 <td>02/02/2021</td>
                                                 <td>Mehadi Hasan Khan</td>
                                                 <td>Digital Payment</td>
-                                                <td class="t-status"><span class="active-now"></span>Complate</td>
+                                                <td class="t-status"><span class="o-cancel">Cancel</span></td>
+                                                <td><span class="o-draft">Unfulfilled</span></td>
                                                 <td>BDT 650.00</td>
                                             </tr>
                                             <tr>
@@ -201,7 +263,8 @@
                                                 <td>02/02/2021</td>
                                                 <td>Mehadi Hasan Khan</td>
                                                 <td>Digital Payment</td>
-                                                <td class="t-status"><span class="active-now"></span>Complate</td>
+                                                <td class="t-status"><span class="o-complate">Complate</span></td>
+                                                <td><span class="o-complate">Fullfill</span></td>
                                                 <td>BDT 650.00</td>
                                             </tr>
                                             <tr>
@@ -210,7 +273,8 @@
                                                 <td>02/02/2021</td>
                                                 <td>Mehadi Hasan Khan</td>
                                                 <td>Digital Payment</td>
-                                                <td class="t-status"><span class="active-now"></span>Complate</td>
+                                                <td class="t-status"><span class="o-draft">Draft</span></td>
+                                                <td><span class="o-complate">Fullfill</span></td>
                                                 <td>BDT 650.00</td>
                                             </tr>
                                             <tr>
@@ -219,7 +283,8 @@
                                                 <td>02/02/2021</td>
                                                 <td>Mehadi Hasan Khan</td>
                                                 <td>Digital Payment</td>
-                                                <td class="t-status"><span class="active-now"></span>Complate</td>
+                                                <td class="t-status"><span class="o-pending">Pending</span></td>
+                                                <td><span class="o-complate">Fullfill</span></td>
                                                 <td>BDT 650.00</td>
                                             </tr>
                                             <tr>
@@ -228,7 +293,8 @@
                                                 <td>02/02/2021</td>
                                                 <td>Mehadi Hasan Khan</td>
                                                 <td>Digital Payment</td>
-                                                <td class="t-status"><span class="not-active"></span>Cancel</td>
+                                                <td class="t-status"><span class="o-cancel"> Cancel</span></td>
+                                                <td><span class="o-complate">Fullfill</span></td>
                                                 <td>BDT 650.00</td>
                                             </tr>
                                         </tbody>

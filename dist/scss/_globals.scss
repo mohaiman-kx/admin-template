@@ -104,3 +104,52 @@ p {
 .text-color-grey{
     color: $color-grey;
 }
+
+.o-pending{
+    background: $color-active-5;
+    color: #fff;
+    display: block;
+    width: 115px;
+    padding: 2px 0px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.o-complate{
+    background: $color-active-3;
+    color: #fff;
+    display: block;
+    width: 115px;
+    padding: 2px 0px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+
+.o-draft{
+    background: $color-grey ;
+    color: #fff;
+    display: block;
+    width: 115px;
+    padding: 2px 0px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.o-cancel{
+    background: $color-active-4;
+    color: #fff;
+    display: block;
+    width: 115px;
+    padding: 2px 0px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
