@@ -153,3 +153,8 @@ p {
     margin: 0 auto;
     text-transform: uppercase;
 }
+
+
+.dropdown-toggle::after{
+    vertical-align: 0.2em;
+}

@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--Google Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
     <!-- flaticon css -->
     <link rel="stylesheet" href="dist/flaticon/flaticon.css">
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/multiSelect.css">
+
     <!--sass complied css-->
     <link rel="stylesheet" href="dist/css/style.css">
     <!-- Font Awesome JS -->
@@ -135,7 +136,7 @@
 
             <div class="main-content">
                 <div class="container">
-                    
+
                     <div class="row">
                         <div class="col-xl-6">
                             <div class="page-title">
@@ -156,7 +157,7 @@
                                             <a class="dropdown-item" href="#">Import Data</a>
                                         </div>
                                     </div>
-                                    <a href="add-product.html" class="btn custom-btn-primary">Create Order</a>
+                                    <a href="single-order.html" class="btn custom-btn-primary">Create Order</a>
                                 </div>
                             </div>
                         </div>
@@ -220,6 +221,43 @@
                         </div>
                     </div>
                     <div class="row mt-5">
+                        <div class="col-xl-6">
+                            <!-- <div class="filter-block">
+                                <select id="example-getting-started" multiple="multiple">
+                                    <option value="cheese">Cheese</option>
+                                    <option value="tomatoes">Tomatoes</option>
+                                    <option value="mozarella">Mozzarella</option>
+                                    <option value="mushrooms">Mushrooms</option>
+                                    <option value="pepperoni">Pepperoni</option>
+                                    <option value="onions">Onions</option>
+                                </select>
+                            </div> -->
+                            <div class="filter-block">
+
+                                <div class="select-box">
+                                    <select class="selectpicker" multiple="" data-live-search="true"
+                                        data-live-search-placeholder="Search" tabindex="-98">
+                                        <optgroup label="Foods">
+                                            <option>Orange</option>
+                                            <option>Apple</option>
+                                        </optgroup>
+                                        <optgroup label="Cloths">
+                                            <option>Panjabi</option>
+                                            <option>Shirt</option>
+                                            <option>Pants</option>
+                                            <option>Shoes</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="search-table">
+                                <input class="form-control" id="myInput" type="text" placeholder="Product Search...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
                         <div class="col-xl-12">
                             <div class="product-table">
                                 <div class="table-responsive">
@@ -326,7 +364,7 @@
     <script src="dist/bootstrap/js/popper.min.js"></script>
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
     <script src="dist/js/bootstrap-multiselect.min.js"></script>
+    <script src="dist/js/multiSelect.js"></script>
     <script src="dist/js/script.js"></script>
 </body>
-
 </html>

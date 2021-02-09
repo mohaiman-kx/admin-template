@@ -152,6 +152,10 @@ p {
   text-transform: uppercase;
 }
 
+.dropdown-toggle::after {
+  vertical-align: 0.2em;
+}
+
 #sidebar {
   min-width: 300px;
   max-width: 300px;
@@ -1124,6 +1128,18 @@ a[data-toggle="collapse"] {
   line-height: 30px;
 }
 
+.cataogroy-select-area {
+  border: 1px solid #ced4da;
+  padding: 20px 0px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 20px 30px 40px 30px;
+}
+
+.cataogroy-select-area .form-check {
+  margin-top: 1rem;
+}
+
 .login-wrapper-page {
   margin: 7.5% auto;
   position: relative;
@@ -1164,5 +1180,11 @@ a[data-toggle="collapse"] {
 
 .list-unstyled ul li {
   border-bottom: 1px solid #607d8b33;
+}
+
+@media (max-width: 767px) {
+  #sidebar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
