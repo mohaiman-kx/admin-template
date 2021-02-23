@@ -1,20 +1,21 @@
-#o-notification{
-   position: fixed;
-   bottom: 10px;
-   right: 10px;
+#o-notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 
-.toast-notification{
+.toast-notification {
     background: #fff;
-    color:$color-text-dark;
+    color: $color-text-dark;
     box-shadow: $box-shadow-xl;
     text-align: center;
     padding: 1.5rem;
     margin: 1rem;
     font-size: 1.05rem;
-    .o-complate-toast{
-        background:$color-active-3;
+
+    .o-complate-toast {
+        background: $color-active-3;
         padding: 3px 3px;
         color: #fff;
         font-weight: 700;

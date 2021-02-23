@@ -1,90 +1,95 @@
 .search-table {
 
-    input{
-    border-radius: 0;
-    margin-bottom: 10px;
-    padding: 23px 12px;
-  
+    input {
+        border-radius: 0;
+        margin-bottom: 10px;
+        padding: 23px 12px;
+
 
     }
-    .form-control:focus{
+
+    .form-control:focus {
         color: $color-active-2;
-        border:1px solid $color-active-2;
+        border: 1px solid $color-active-2;
         box-shadow: none;
-        
+
     }
 }
 
 
 
-.genarel-information{
-    box-shadow:$box-shadow-xl;
+.genarel-information {
+    box-shadow: $box-shadow-xl;
     padding: 20px;
-    h6{
+
+    h6 {
         font-size: $font-size-lg;
     }
 
-    .genarel-form .form-group{
+    .genarel-form .form-group {
         margin-bottom: 2rem;
     }
 
-    .genarel-form input{
+    .genarel-form input {
         border-radius: 0;
         padding: 23px;
     }
-    
-    .genarel-form textarea{
+
+    .genarel-form textarea {
         border-radius: 0;
-        padding:23px ;
+        padding: 23px;
     }
 
-    .form-control:focus{
+    .form-control:focus {
         color: $color-active-2;
-        border:1px solid $color-active-2;
+        border: 1px solid $color-active-2;
         box-shadow: none;
     }
-    .form-control:focus::placeholder{
+
+    .form-control:focus::placeholder {
         color: $color-active-2;
     }
 }
 
-.organize-product{
-    box-shadow:$box-shadow-xl;
+.organize-product {
+    box-shadow: $box-shadow-xl;
     padding: 20px;
 
-    h6{
+    h6 {
         font-size: $font-size-lg;
     }
-    .organize-product-form .form-group{
+
+    .organize-product-form .form-group {
         margin-bottom: 2rem;
 
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
     }
 
 
-    .organize-product-form .form-control{
-        border-radius:0 ;
+    .organize-product-form .form-control {
+        border-radius: 0;
         height: 48px;
     }
 }
 
-.product-table .table{
+.product-table .table {
     text-align: center;
 }
 
-.product-table input[type=checkbox]{
+.product-table input[type=checkbox] {
     border-radius: 0;
 }
 
-.product-table .table td, .product-table .table th{
+.product-table .table td,
+.product-table .table th {
     vertical-align: middle;
 }
 
 
 .search-engine-area {
-    box-shadow:$box-shadow-xl;
+    box-shadow: $box-shadow-xl;
     padding: 20px;
 
     .search-title {
@@ -99,7 +104,7 @@
             text-transform: uppercase;
             font-weight: 600;
 
-            a{
+            a {
                 color: $color-active-2;
                 text-decoration: none;
             }
@@ -107,41 +112,44 @@
         }
     }
 
-    .search-engine-info h6{
+    .search-engine-info h6 {
         font-size: $font-size-lg;
     }
 }
 
-.seo-content input , .seo-content textarea {
+.seo-content input,
+.seo-content textarea {
     border-radius: 0;
     padding: 23px 12px;
 }
 
 .seo-content {
 
-    display:none;
+    display: none;
 
-    .form-group{
+    .form-group {
         margin-bottom: 2rem;
     }
 
-    .form-control:focus{
+    .form-control:focus {
         color: $color-active-2;
-        border:1px solid $color-active-2;
+        border: 1px solid $color-active-2;
         box-shadow: none;
     }
-    .form-control:focus::placeholder{
+
+    .form-control:focus::placeholder {
         color: $color-active-2;
     }
 }
 
-.image-upload-area{
-    box-shadow:$box-shadow-xl;
+.image-upload-area {
+    box-shadow: $box-shadow-xl;
     padding: 20px;
 
-    h6{
+    h6 {
         font-size: $font-size-lg;
     }
+
     .search-title {
         display: flex;
         flex-direction: row;
@@ -151,68 +159,77 @@
 }
 
 
-.visibility-area{
-    box-shadow:$box-shadow-xl;
+.visibility-area {
+    box-shadow: $box-shadow-xl;
     padding: 20px;
-    h6{
+
+    h6 {
         font-size: $font-size-lg;
     }
-    .visibility-area-form{
-        .form-check{
+
+    .visibility-area-form {
+        .form-check {
             margin-bottom: 1rem;
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 0;
             }
         }
-        .form-check-label{
+
+        .form-check-label {
             font-size: $font-size-lm;
         }
     }
 }
 
 
-.save-area{
-    box-shadow:$box-shadow-xl;
+.save-area {
+    box-shadow: $box-shadow-xl;
     padding: 20px;
 
-    button{
+    button {
         margin-right: 10px;
     }
 
 }
 
 
-.page-sub-title{
+.page-sub-title {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 
-    .btn-custom-dropdown{
+    .btn-custom-dropdown {
         border-radius: 0;
         margin-right: 10px;
     }
 }
 
-.filter-block .custom-select{
+.filter-block .custom-select {
     height: calc(2.9rem + 2px);
     border-radius: 0;
     margin-right: 20px;
-    
+
 }
 
 
-.select-box{
-    .bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover{
+.select-box {
+
+    .bootstrap-select>.dropdown-toggle.bs-placeholder,
+    .bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+    .bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+    .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
         border-radius: 0;
         padding: 10px;
         border: 1px solid #ededed;
     }
-    .form-control{
+
+    .form-control {
         border-radius: 0;
     }
 
-    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
         width: 350px;
     }
-}   
+}

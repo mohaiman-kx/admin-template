@@ -223,7 +223,8 @@
 }
 
 
-.seo-content-view input , .seo-content-view textarea {
+.seo-content-view input,
+.seo-content-view textarea {
     border-radius: 0;
     padding: 23px 12px;
 }
@@ -231,39 +232,41 @@
 .seo-content-view {
 
 
-    .form-group{
+    .form-group {
         margin-bottom: 2rem;
     }
 
-    .form-control:focus{
+    .form-control:focus {
         color: $color-active-2;
-        border:1px solid $color-active-2;
+        border: 1px solid $color-active-2;
         box-shadow: none;
     }
-    .form-control:focus::placeholder{
+
+    .form-control:focus::placeholder {
         color: $color-active-2;
     }
 }
 
-.table-variants{
-    .form-group{
+.table-variants {
+    .form-group {
         margin-bottom: 0;
     }
-    .form-control{
+
+    .form-control {
         border-radius: 0;
         outline: 0 !important;
     }
-    button{
+
+    button {
         border-radius: 0;
         vertical-align: baseline;
         width: 100%;
-        padding:7px;
+        padding: 7px;
     }
 
 }
 
-.variants-button a{
-        color: #03a9f4;
+.variants-button a {
+    color: #03a9f4;
     text-decoration: none;
-    }
-
+}
