@@ -1257,6 +1257,73 @@ div#selectedDiv #thing {
   border-bottom: 1px solid #607d8b33;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  /* Colors of the buttons*/
+}
+
+.footer .selectors,
+.footer .block {
+  height: 100%;
+  width: 100%;
+}
+
+.footer .selectors button {
+  border: 0;
+  border-radius: 0;
+  background-color: #f8f9fa !important;
+  width: 25%;
+  margin-left: 0;
+}
+
+.footer .selectors button:active {
+  border: 0;
+}
+
+.footer .selectors button:focus {
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0px;
+          box-shadow: 0 0 0 0px;
+}
+
+.footer .active,
+.footer .selector-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .inactive {
+  display: none;
+}
+
+.footer .selector-holder span {
+  font-size: 0.8rem;
+}
+
+.footer .button-active,
+.footer .selectors button:hover,
+.footer .selectors button:active,
+.footer .selectors button:focus {
+  color: #ff0000;
+}
+
+.footer .button-inactive {
+  color: #000;
+}
+
 @media (max-width: 767px) {
   #sidebar {
     display: none;
